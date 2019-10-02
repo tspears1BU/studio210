@@ -1,0 +1,54 @@
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px 0px;
+    display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+a.r-tabs-anchor {
+	color: #248ddf;
+}
+a.r-tabs-anchor:focus,
+a.r-tabs-anchor:hover,
+a.r-tabs-anchor:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Accordion responsive breakpoint */
+@media handheld, only screen and (max-width: 1023px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+		background: #fff;
+		padding: 15px 15px;
+		margin: 5px 0px 0px 0px;
+		border: 1px solid #248ddf;
+    }
+	.r-tabs .r-tabs-accordion-title:hover {
+		background: #248ddf;
+	}
+	.r-tabs-accordion-title.r-tabs-state-active {
+    	background: #248ddf;
+	}
+}
